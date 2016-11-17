@@ -12,7 +12,6 @@ public class Main {
         String text [] = new String [1000];
         while (sf.hasNext())
         {
-
             maxIndex++;
             text[maxIndex] = sf.nextLine();
         }
