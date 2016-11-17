@@ -16,8 +16,16 @@ public class Main {
             text[maxIndex] = sf.nextLine();
         }
         sf.close();
-        for(int j = 0; j <= maxIndex; j++){
+
+        for(int j = 0; j <= maxIndex; j++)
             System.out.println(text[j]);
-        }
+
+        FileWriter fw = new FileWriter("output.txt");
+        PrintWriter output = new PrintWriter(fw);
+
+        output.print("Hey homes. Whats up?");
+        output.close();
+        fw.close();
+
     }
 }
