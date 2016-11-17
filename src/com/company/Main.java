@@ -23,9 +23,14 @@ public class Main {
         FileWriter fw = new FileWriter("output.txt");
         PrintWriter output = new PrintWriter(fw);
 
-        output.print("Hey homes. Whats up?");
+        System.out.println("Username: ");
+        Scanner kb = new Scanner(System.in);
+        String a = kb.nextLine();
+
+        output.println(a);
         output.close();
         fw.close();
+
 
     }
 }
